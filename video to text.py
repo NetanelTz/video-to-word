@@ -12,7 +12,7 @@ def audio_to_word(path):
     chunk_length_ms = 80000  # pydub calculates in millisecond
     chunks = make_chunks(myaudio, chunk_length_ms)  # Make chunks of 80 sec
 
-    # Export all of the individual chunks as wav files
+    # Export all of the individual  chunks as wav files
 
     for i, chunk in enumerate(chunks):
         chunk_name = "chunk{0}.wav".format(i)
